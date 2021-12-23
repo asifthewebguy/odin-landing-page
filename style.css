@@ -1,9 +1,70 @@
+/* global start */
+:root{
+    /* dark background color hero and footer */
+    --bg-dark:#1F2937;
+    /* logo & hero main text color */
+    --text-logo:#F9FAF8;
+    /* hero secodry text & qoute background color */
+    --text-secodry: #E5E7EB;
+    /* information header text & quote text color */
+    --text-info: #1F2937;
+    /* call for action button & background color  */
+    --call-to-action: #3882F6;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header,
-section.hero{
-    background-color: #1F2937;
+section.hero,
+footer{
+    background-color: var(--bg-dark);
 }
+div.container,
+div.quote,
+div.call-to-action-container{
+    width: 1024px;
+    margin: 0 auto;
+}
+/* global end */
+/* header start */
+header div.container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center ;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 24px;
+    color: var(--text-logo);
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: bold;
+}
+/* header end */
+/* nav start */
+nav{
+    display: flex;
+}
+nav > ul {
+    display: flex;
+    gap: 20px;
+}
+nav > ul > li {
+    display: flex;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+/* nav end */
+/* hero start */
+section.hero h2{
+    font-size: 48px;
+    font-weight:900;
+    color: var(--text-logo);
+}
+/* hero end */
