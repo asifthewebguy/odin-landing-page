@@ -67,4 +67,123 @@ section.hero h2{
     font-weight:900;
     color: var(--text-logo);
 }
+section.hero p {
+    font-size: 18px;
+    color: var(--text-secodry);
+}
+section.hero > div.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(500px, auto);
+    align-items: center;
+    justify-items: flex-start;
+}
+section.hero div.col-1{
+    /* padding: 0 0 0 20px; */
+}
+section.hero button.signup{
+    background: var(--call-to-action);
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-secodry);
+    margin-top: 30px;
+}
 /* hero end */
+/* Information start */
+section.some-info div.container{
+    margin: 50px auto;
+}
+section.some-info h3{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--text-info);
+}
+section.some-info div.carddisplay{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px 100px;
+}
+section.some-info div.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+section.some-info div.card>div.img{
+    width: 170px;
+    height: 170px;
+    border: 2px solid var(--call-to-action);
+    border-radius: 20px;
+
+}
+/* Information end */
+/* Inspiration start */
+section.inspiration{
+    background-color: var(--text-secodry);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(400px, auto);
+    align-items: center;
+}
+
+section.inspiration div.quote p {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: var(--text-info);
+}
+section.inspiration div.quote div.quote-author{
+    color: var(--text-info);
+    font-size: 34px;
+    font-style: normal;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+}
+/* Inspiration end */
+/* Call for action start */
+
+section.call-to-action > div.call-to-action-container{
+    background-color: var(--call-to-action);
+    border-radius: 5px;
+    padding: 50px;
+    color: var(--text-secodry);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 100px auto;
+}
+div.call-to-action-container h3{
+    font-size: 34px;
+    font-weight: bolder;
+    
+}
+section.call-to-action div.col-2{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+section.call-to-action button{
+    background: var(--call-to-action);
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: 2px solid snow;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-secodry);
+}
+/* Call for action End */
+/* footoet start */
+footer{
+    text-align: center;
+    padding: 30px 0;
+    color: var(--text-secodry);
+    font-size: 18px;
+}
+/* footoet end */
